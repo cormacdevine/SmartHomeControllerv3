@@ -53,6 +53,13 @@ namespace SmartHomeController
             {
                 Console.WriteLine($"{DeviceName} is not currently recording.");
             }
-        }     
+        }
+
+        public override void GetStatus()
+        {
+            base.GetStatus();
+            Console.WriteLine("This is SmartSecurityCamera");
+            Console.WriteLine($"Resolution: {Resolution} ");
+        }
     }
 }
